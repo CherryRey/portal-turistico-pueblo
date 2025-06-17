@@ -1,0 +1,80 @@
+import { Business, RouteInfo } from '../types/Business';
+
+export const businesses: Business[] = [
+  {
+    id: '1',
+    name: 'Bar VillaPasiega',
+    description: 'Disfruta de la cocina tradicional en un ambiente acogedor',
+    category: 'gastronomia',
+    contact: {
+      phone: '942 XXX XXX',
+      address: 'Plaza del Pueblo, 1'
+    },
+    schedule: 'L-D: 8:00-23:00',
+    isOpen: true
+  },
+  {
+    id: '2',
+    name: 'Quesería Los Tiemblos',
+    description: 'Quesos artesanales de la máxima calidad',
+    category: 'gastronomia',
+    contact: {
+      phone: '942 XXX XXX',
+      email: 'info@lostiemblos.com'
+    },
+    schedule: 'L-V: 9:00-14:00, 16:00-19:00 | S-D: 9:00-14:00'
+  },
+  {
+    id: '3',
+    name: 'Obrador La Braniza',
+    description: 'Pan y bollería recién horneados cada día',
+    category: 'gastronomia',
+    contact: {
+      phone: '942 XXX XXX'
+    },
+    schedule: 'L-S: 7:00-14:00 | Domingos cerrado'
+  },
+  {
+    id: '4',
+    name: 'Fisioterapia El Casar',
+    description: 'Raquel Crespo - Cuidado profesional de tu salud',
+    category: 'servicios',
+    contact: {
+      phone: '942 XXX XXX',
+      whatsapp: '6XX XXX XXX'
+    },
+    schedule: 'L-V: 9:00-14:00, 16:00-20:00 | Cita previa'
+  },
+  {
+    id: '5',
+    name: 'Ganadería Bustamante',
+    description: 'Carne de primera calidad de nuestras montañas',
+    category: 'productos',
+    contact: {
+      phone: '942 XXX XXX',
+      address: 'Barrio Las Cuevas'
+    },
+    schedule: 'L-V: 10:00-13:00, 17:00-19:00 | Sábados: 10:00-13:00'
+  }
+];
+
+export const routes: RouteInfo[] = [
+  {
+    id: '1',
+    name: 'Ruta del Molino',
+    description: 'Senderismo entre paisajes tradicionales y naturaleza',
+    duration: '2-3 horas',
+    distance: '6 km',
+    difficulty: 'Moderado',
+    tips: 'Llevar agua y calzado adecuado'
+  },
+  {
+    id: '2',
+    name: 'Ruta del Reloj Solar',
+    description: 'Descubre nuestro patrimonio histórico caminando',
+    duration: '1-2 horas',
+    distance: '3.5 km',
+    difficulty: 'Fácil',
+    tips: 'Mejor en mañanas soleadas'
+  }
+];
