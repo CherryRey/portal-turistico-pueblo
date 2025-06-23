@@ -10,7 +10,7 @@ export const businesses: Business[] = [
       phone: '942 XXX XXX',
       address: 'Plaza del Pueblo, 1'
     },
-    schedule: 'L-D: 8:00-23:00',
+    schedule: 'M - D: 10:00-00:00',
     isOpen: true
   },
   {
@@ -27,12 +27,13 @@ export const businesses: Business[] = [
   {
     id: '3',
     name: 'Obrador La Braniza',
-    description: 'Pan y bollería recién horneados cada día',
+    description: 'Auténticos Sobaos y Quesadas cántabras',
     category: 'gastronomia',
     contact: {
-      phone: '942 XXX XXX'
+      phone: '646 02 65 69',
+      address: 'Bo. San Pedro, 57, San Pedro del Romeral, Cantabria'
     },
-    schedule: 'L-S: 7:00-14:00 | Domingos cerrado'
+    schedule: 'L,X,J: 10:30-14:30 | V-D: 10:30-14:30, 17:00-20:00 | Martes cerrado'
   },
   {
     id: '4',
@@ -62,8 +63,8 @@ export const routes: RouteInfo[] = [
   {
     id: '1',
     name: 'Ruta del Molino',
-    description: 'Senderismo entre paisajes tradicionales y naturaleza',
-    duration: '2-3 horas',
+    description: 'Senderismo entre molinos y naturaleza',
+    duration: '2 horas',
     distance: '6 km',
     difficulty: 'Moderado',
     tips: 'Llevar agua y calzado adecuado'
