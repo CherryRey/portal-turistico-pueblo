@@ -4,6 +4,7 @@ import { businesses } from './data/businesses';
 
 function App() {
   const gastronomia = businesses.filter(b => b.category === 'gastronomia');
+  const productos = businesses.filter(b => b.category === 'productos');
   const servicios = businesses.filter(b => b.category === 'servicios');
 
   return (
@@ -35,15 +36,15 @@ function App() {
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 py-8">
-        
+
         {/* Introducción */}
         <section className="text-center mb-12 bg-white rounded-lg shadow-md p-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
             Un lugar único por descubrir
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Nuestro pueblo te ofrece una experiencia auténtica, desde nuestra rica 
-            gastronomía local hasta impresionantes rutas de senderismo. Aquí encontrarás 
+            Nuestro pueblo te ofrece una experiencia auténtica, desde nuestra rica
+            gastronomía local hasta impresionantes rutas de senderismo. Aquí encontrarás
             todo lo que necesitas saber para disfrutar de tu visita.
           </p>
         </section>
@@ -56,6 +57,19 @@ function App() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {gastronomia.map(business => (
+              <BusinessCard key={business.id} business={business} />
+            ))}
+          </div>
+        </section>
+
+        {/* Productos */}
+        <section id="productos" className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+            <span className="bg-blue-100 p-3 rounded-full mr-4">🧀</span>
+            Productos
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {productos.map(business => (
               <BusinessCard key={business.id} business={business} />
             ))}
           </div>
@@ -85,7 +99,7 @@ function App() {
                 ¡Más contenido próximamente!
               </h3>
               <p className="mt-2 text-yellow-700">
-                Estamos añadiendo más negocios, rutas de senderismo, y servicios públicos. 
+                Estamos añadiendo más negocios, rutas de senderismo, y servicios públicos.
                 Este es tu proyecto en desarrollo.
               </p>
             </div>
