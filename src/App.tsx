@@ -1,6 +1,8 @@
 import React from 'react';
 import BusinessCard from './components/BusinessCard';
 import { businesses } from './data/businesses';
+import RouteCard from './components/RouteCard';
+import { routes } from './data/businesses';
 
 function App() {
   const gastronomia = businesses.filter(b => b.category === 'gastronomia');
@@ -84,6 +86,19 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {servicios.map(business => (
               <BusinessCard key={business.id} business={business} />
+            ))}
+          </div>
+        </section>
+
+        {/* Rutas de Senderismo */}
+        <section id="naturaleza" className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+            <span className="bg-green-100 p-3 rounded-full mr-4">🥾</span>
+            Rutas de Senderismo
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {routes.map(route => (
+              <RouteCard key={route.id} route={route} />
             ))}
           </div>
         </section>

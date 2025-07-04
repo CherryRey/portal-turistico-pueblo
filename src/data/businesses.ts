@@ -67,7 +67,8 @@ export const routes: RouteInfo[] = [
     duration: '2 horas',
     distance: '6 km',
     difficulty: 'Moderado',
-    tips: 'Llevar agua y calzado adecuado'
+    tips: 'Llevar agua y calzado adecuado.',
+    category: 'naturaleza'
   },
   {
     id: '2',
@@ -76,6 +77,27 @@ export const routes: RouteInfo[] = [
     duration: '1-2 horas',
     distance: '3.5 km',
     difficulty: 'Fácil',
-    tips: 'Mejor en mañanas soleadas'
+    tips: 'Mejor en mañanas soleadas.',
+    category: 'naturaleza'
+  },
+  {
+    id: '3',
+    name: 'Túnel de la Engaña – Senda del Arroyo Aján',
+    description: 'Recorrido circular por la ribera del arroyo Aján hasta el túnel abandonado de La Engaña',
+    duration: '3–4 horas',
+    distance: '9.85 km',
+    difficulty: 'Moderado',
+    tips: 'IMPRESCINDIBLE llevar linterna para el túnel y calzado resistente.',
+    category: 'naturaleza'
+  },
+  {
+    id: '5',
+    name: 'Cascada del Aguasal – Circular desde Vega de Pas',
+    description: 'Recorrido circular desde Vega de Pas hasta la cascada del Aguasal, ideal para todos los niveles.',
+    duration: '1-2 horas',
+    distance: '5.74 km',
+    difficulty: 'Fácil',
+    tips: 'Sendas accesibles para todos. Llevar calzado antideslizante y agua.',
+    category: 'naturaleza'
   }
 ];
