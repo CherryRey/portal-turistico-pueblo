@@ -21,4 +21,5 @@ export interface RouteInfo {
   distance: string;
   difficulty: 'Fácil' | 'Moderado' | 'Difícil';
   tips: string;
+  category: string;
 }
