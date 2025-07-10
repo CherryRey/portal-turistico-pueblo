@@ -1,58 +1,61 @@
 import { Business, RouteInfo } from '../types/Business';
 
+
+
 export const businesses: Business[] = [
   {
     id: '1',
     name: 'Bar VillaPasiega',
     description: 'Disfruta de la cocina tradicional en un ambiente acogedor',
-    category: 'gastronomia',
+    categories: ['gastronomia'],
     contact: {
       phone: '942 XXX XXX',
       address: 'Plaza del Pueblo, 1'
     },
-    schedule: 'L-D: 8:00-23:00',
+    schedule: 'M - D: 10:00-00:00',
     isOpen: true
   },
   {
     id: '2',
     name: 'Quesería Los Tiemblos',
     description: 'Quesos artesanales de la máxima calidad',
-    category: 'gastronomia',
+    categories: ['productos','gastronomia'],
     contact: {
-      phone: '942 XXX XXX',
-      email: 'info@lostiemblos.com'
+      phone: '609 40 77 45',
+      address: 'Barrio La Sota s/n, 39686, San Pedro del Romeral (Cantabria)'
     },
     schedule: 'L-V: 9:00-14:00, 16:00-19:00 | S-D: 9:00-14:00'
   },
   {
     id: '3',
     name: 'Obrador La Braniza',
-    description: 'Pan y bollería recién horneados cada día',
-    category: 'gastronomia',
+    description: 'Auténticos Sobaos y Quesadas cántabras',
+    categories: ['productos','gastronomia'],
     contact: {
-      phone: '942 XXX XXX'
+      phone: '646 02 65 69',
+      address: 'Bo. San Pedro, 57, San Pedro del Romeral, Cantabria'
     },
-    schedule: 'L-S: 7:00-14:00 | Domingos cerrado'
+    schedule: 'L,X,J: 10:30-14:30 | V-D: 10:30-14:30, 17:00-20:00 | Martes cerrado'
   },
   {
     id: '4',
     name: 'Fisioterapia El Casar',
     description: 'Raquel Crespo - Cuidado profesional de tu salud',
-    category: 'servicios',
+    categories: ['servicios'],
     contact: {
-      phone: '942 XXX XXX',
-      whatsapp: '6XX XXX XXX'
+      phone: '658128002',
+      whatsapp: '658128002'
     },
-    schedule: 'L-V: 9:00-14:00, 16:00-20:00 | Cita previa'
+    schedule: 'V-S: 9:00-14:00, 16:00-20:00 | Cita previa'
   },
   {
     id: '5',
-    name: 'Ganadería Bustamante',
+    name: 'Ganadería Bustamante Pérez',
     description: 'Carne de primera calidad de nuestras montañas',
-    category: 'productos',
+    categories: ['productos'],
     contact: {
-      phone: '942 XXX XXX',
-      address: 'Barrio Las Cuevas'
+      phone: '616 00 16 28',
+      address: 'Finca el Pradón, 39686 San Pedro del Romeral, Cantabria'
     },
     schedule: 'L-V: 10:00-13:00, 17:00-19:00 | Sábados: 10:00-13:00'
   }
@@ -62,8 +65,8 @@ export const routes: RouteInfo[] = [
   {
     id: '1',
     name: 'Ruta del Molino',
-    description: 'Senderismo entre paisajes tradicionales y naturaleza',
-    duration: '2-3 horas',
+    description: 'Senderismo entre molinos y naturaleza',
+    duration: '2 horas',
     distance: '6 km',
     difficulty: 'Moderado',
     tips: 'Llevar agua y calzado adecuado.',

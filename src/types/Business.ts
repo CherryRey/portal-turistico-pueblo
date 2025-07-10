@@ -1,8 +1,11 @@
+export type CategoryType = 'gastronomia' | 'productos' | 'servicios' | 'naturaleza' | 'publicos';
+
+
 export interface Business {
   id: string;
   name: string;
   description: string;
-  category: 'gastronomia' | 'productos' | 'servicios' | 'naturaleza' | 'publicos';
+  categories:  CategoryType[]; //cambios
   contact: {
     phone?: string;
     email?: string;
