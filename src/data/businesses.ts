@@ -1,60 +1,87 @@
 import { Business, RouteInfo } from '../types/Business';
 
+
+
 export const businesses: Business[] = [
+  
   {
     id: '1',
-    name: 'Bar VillaPasiega',
-    description: 'Disfruta de la cocina tradicional en un ambiente acogedor',
-    category: 'gastronomia',
+    name: 'Bar Villa Pasiega',
+    description: 'Disfruta de la cocina tradicional de San Pedro del Romeral en un ambiente acogedor',
+    categories: ['gastronomia'],
     contact: {
-      phone: '942 XXX XXX',
-      address: 'Plaza del Pueblo, 1'
+      phone: '623 15 51 79',
+      address: 'La plaza La plaza, 39686 San Pedro del Romeral, Cantabria'
     },
-    schedule: 'L-D: 8:00-23:00',
+    schedule: 'M - D: 10:00-00:00',
     isOpen: true
   },
   {
     id: '2',
     name: 'Quesería Los Tiemblos',
     description: 'Quesos artesanales de la máxima calidad',
-    category: 'gastronomia',
+    categories: ['productos','gastronomia'],
     contact: {
-      phone: '942 XXX XXX',
-      email: 'info@lostiemblos.com'
+      phone: '942 59 55 67',
+      address: 'Barrio La Sota s/n, 39686, San Pedro del Romeral (Cantabria)'
     },
     schedule: 'L-V: 9:00-14:00, 16:00-19:00 | S-D: 9:00-14:00'
   },
   {
     id: '3',
     name: 'Obrador La Braniza',
-    description: 'Pan y bollería recién horneados cada día',
-    category: 'gastronomia',
+    description: 'Auténticos Sobaos y Quesadas cántabras',
+    categories: ['productos','gastronomia'],
     contact: {
-      phone: '942 XXX XXX'
+      phone: '646 02 65 69',
+      address: 'Bo. San Pedro, 57, San Pedro del Romeral, Cantabria'
     },
-    schedule: 'L-S: 7:00-14:00 | Domingos cerrado'
+    schedule: 'L,X,J: 10:30-14:30 | V-D: 10:30-14:30, 17:00-20:00 | Martes cerrado'
   },
   {
     id: '4',
     name: 'Fisioterapia El Casar',
-    description: 'Raquel Crespo - Cuidado profesional de tu salud',
-    category: 'servicios',
+    description: 'Raquel Crespo - Nuestros cuerpos requieren unos cuidados, que muchas veces olvidamos, inmersos en el acelerado ritmo de vida de nuestra sociedad.\nDate un respiro y cuídate',
+    categories: ['servicios'],
     contact: {
-      phone: '942 XXX XXX',
-      whatsapp: '6XX XXX XXX'
+      phone: '658 12 80 02',
+      whatsapp: '658 12 80 02'
     },
-    schedule: 'L-V: 9:00-14:00, 16:00-20:00 | Cita previa'
+    schedule: 'V-S: 9:00-14:00, 16:00-20:00 | Cita previa'
   },
   {
     id: '5',
-    name: 'Ganadería Bustamante',
-    description: 'Carne de primera calidad de nuestras montañas',
-    category: 'productos',
+    name: 'Ganadería Bustamante Pérez',
+    description: 'Carne de primera calidad de nuestras montañas. Carne de vacuno y oveja. Hacemos recorridos dentro de nuestra ganadería',
+    categories: ['productos'],
     contact: {
-      phone: '942 XXX XXX',
-      address: 'Barrio Las Cuevas'
+      phone: '616 00 16 28',
+      address: 'Finca el Pradón, 39686 San Pedro del Romeral, Cantabria'
     },
     schedule: 'L-V: 10:00-13:00, 17:00-19:00 | Sábados: 10:00-13:00'
+  },
+
+    {
+    id: '6',
+    name: 'Morcillas, quesadas y huevos camperos Llarira Pasiega',
+    description: 'Morcillas y Quesadas caseras, hechas de la mano de María Angeles. Por encargo.',
+    categories: ['productos'],
+    contact: {
+      phone: '638 26 32 78',
+      address: ''
+    },
+    schedule: 'L-V: 10:00-13:00'
+  },    
+   {
+    id: '7',
+    name: 'Herrería Artesanal Fragua Norte',
+    description: 'Herrería y Forja. Tenemos nuestro taller en San Pedro del Romeral, en los Valles Pasiegos de Cantabria, y trabajamos por encargo para toda España.\n Diseñamos y fabricamos muebles a medida, elementos decorativos y todo tipo de trabajos en hierro',
+    categories: ['productos', 'servicios'],
+    contact: {
+      phone: '675 299 856 ',
+      address: 'San Pedro del Romeral'
+    },
+    schedule: 'L-V: 10:00-15:00'
   }
 ];
 
@@ -62,8 +89,8 @@ export const routes: RouteInfo[] = [
   {
     id: '1',
     name: 'Ruta del Molino',
-    description: 'Senderismo entre paisajes tradicionales y naturaleza',
-    duration: '2-3 horas',
+    description: 'Senderismo entre molinos y naturaleza',
+    duration: '2 horas',
     distance: '6 km',
     difficulty: 'Moderado',
     tips: 'Llevar agua y calzado adecuado.',
