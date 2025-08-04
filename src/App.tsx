@@ -66,6 +66,7 @@ filteredBusinesses.forEach(business => {
     publicos: { label: 'Servicios Públicos', emoji: '🏛️', color: 'purple' }
   };
 
+  const showRoutes = selectedCategory === 'all' || selectedCategory === 'naturaleza';
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       {/* Header Mejorado */}
@@ -160,7 +161,7 @@ filteredBusinesses.forEach(business => {
         )}
 
         {/* Rutas de Senderismo */}
-        <section id="naturaleza" className="mb-12">
+        {(selectedCategory === 'all' || selectedCategory === 'naturaleza') && (<section id="naturaleza" className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-6 flex items-center">
             <span className="bg-green-100 p-3 rounded-full mr-4">🥾</span>
             Rutas de Senderismo
@@ -170,7 +171,7 @@ filteredBusinesses.forEach(business => {
               <RouteCard key={route.id} route={route} />
             ))}
           </div>
-        </section>
+        </section>)}
 
         {/* Próximamente */}
         <section className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-lg">
