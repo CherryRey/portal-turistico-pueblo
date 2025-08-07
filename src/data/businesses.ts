@@ -82,6 +82,17 @@ export const businesses: Business[] = [
       address: 'San Pedro del Romeral'
     },
     schedule: 'L-V: 10:00-15:00'
+  },
+     {
+    id: '8',
+    name: 'Farmacia Los Valles Pasiegos',
+    description: 'En la Farmacia Valles Pasiegos queremos ofrecer calidad, cercanía y profesionalidad en el trato de nuestros farmacéuticos con todo lo relativo a tu hogar. ',
+    categories: ['productos', 'servicios'],
+    contact: {
+      phone: '669 731 546 ',
+      address: 'La Plaza 39686 San Pedro del Romeral, Cantabria'
+    },
+    schedule: 'L-V: 10:00-14:00, 17:00 a 20:00 | Sábados: 10:00 a 14:00'
   }
 ];
 
